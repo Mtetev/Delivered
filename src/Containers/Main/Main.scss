@@ -1,5 +1,8 @@
 :root {
+
+    /* COLORS */
     --color-primary: #1abc9c;
+    --color-primary--transparent: #1abc9c33;
     --color-primary-dark: #16a085;
 
     --color-secondary: #f1c40f;
@@ -7,6 +10,13 @@
 
     --color-tertiary: #e74c3c;
     --color-tertiary-dark: #c0392b;
+
+    --color-black: #111111;
+    --color-gray-light: #AAA;
+
+
+    /* SIZES */
+    --top-bar-height: 6.5rem;
 }
 
 /* Basic Reset */

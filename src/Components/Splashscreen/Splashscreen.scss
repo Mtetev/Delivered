@@ -1,0 +1,100 @@
+.splashscreen {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    align-content: space-around;
+    column-count: 2;
+
+    width: 100vw;
+    // padding-bottom: 6rem;
+    // height: 90rem; // TODO: For testing purposes, remove;
+    
+    background-image: linear-gradient(
+        176deg,
+        var(--color-primary) 0%,
+        var(--color-primary) 50%,
+        var(--color-secondary-dark) 50%,
+    );
+
+    color: #fff;
+
+    &__description {
+        margin: 15rem 0 8rem 0;
+        max-width: 42%;
+
+        font-size: 6rem;
+        color: var(--color-black);
+    }
+
+    .splashscreen-form {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        max-width: 30%;
+        padding: 1rem 3rem 3rem 3rem;
+        margin-bottom: 6rem;
+
+        color: var(--color-black);
+        
+        border-radius: 3px;
+        background-color: #fff;
+        
+        &__label {
+            width: 100%;
+            margin: 1rem 0 1.5rem 0;
+            font-size: 1.75rem;
+        }
+
+        &__input-field {
+            box-sizing: border-box;
+            flex: 1; // gro
+            padding-left: .5rem;;
+            margin-right: 2rem;
+
+            border: 2px solid var(--color-gray-light);
+            border-radius: 4px;
+
+            font-size: 1.75rem;
+
+            transition: all .2s;
+
+            &:focus,
+            &:active {
+                outline: none;
+                border: 2px solid var(--color-primary);
+                box-shadow: 0 0 15px var(--color-primary--transparent);
+            }
+
+            &::placeholder {
+                // : "Enter your address";
+                color: var(--color-gray-light);
+            }
+        }
+
+        &__button {
+            padding: 1rem 1.25rem;
+
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #fff;
+
+            border: none;
+            border-radius: 4px;
+            background-color: var(--color-primary);
+        }
+    }
+
+    &__ad {
+        page-break-before: always;
+
+        clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
+        padding: 4rem 7rem 2rem 7rem;
+        
+        background-color: var(--color-primary-dark);
+
+        font-size: 3.5rem;
+        font-weight: 600;
+    }
+}
