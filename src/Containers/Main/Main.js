@@ -6,11 +6,7 @@ import "./Main.scss";
 
 const Main = () => {
     return [
-        <TopBar />,
-        <p className="test">
-            Test
-        </p>
-        
+        <TopBar />
     ]
 }
 
