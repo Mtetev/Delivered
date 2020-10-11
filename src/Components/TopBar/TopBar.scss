@@ -1,0 +1,58 @@
+.topbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100vw;
+    padding: 1rem 2rem;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: var(--color-primary);
+
+    color: #fff;
+
+    &-logo {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+
+        &__image, &__name {
+            display: inline-block;
+        }
+
+        &__image {
+            height: 4rem;
+            width: auto;
+        }
+
+        &__name {
+            text-transform: uppercase;
+            font-size: 2.5rem;
+        }
+    }
+
+    &-actions {
+
+        &__button,
+        &__button:link,
+        &__button:visited,
+        &__button:active {
+            padding: 1rem 1.25rem;
+
+            font-size: 2rem;
+            color: var(--color-primary);
+            
+            background-color: #fff;
+
+            &:not(:last-child) {
+                margin-right: 2.5rem;
+            }
+        }
+    }
+
+}

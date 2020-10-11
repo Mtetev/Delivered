@@ -1,0 +1,47 @@
+:root {
+    --color-primary: #1abc9c;
+    --color-primary-dark: #16a085;
+
+    --color-secondary: #f1c40f;
+    --color-secondary-dark: #f39c12;
+
+    --color-tertiary: #e74c3c;
+    --color-tertiary-dark: #c0392b;
+}
+
+/* Basic Reset */
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // Default 1rem = 10px;
+}
+
+body {
+    box-sizing: border-box;
+    overflow: scroll;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.test {
+    color: green;
+    font-size: 40rem;
+}
+

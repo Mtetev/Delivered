@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom"
 
+import Main from "./Containers/Main/Main";
+
 import './style.scss';
 
 ReactDOM.render(
-    <h1>Test</h1>,
+    <Main />,
     document.getElementById('app')
 );
