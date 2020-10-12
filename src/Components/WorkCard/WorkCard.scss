@@ -1,0 +1,74 @@
+.work-card {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+
+    height: 50rem; // TODO: Remove
+    width: 17.5%;
+
+    border-radius: 1rem;
+    overflow: hidden;
+
+    color: #fff;
+
+    &__top {
+        width: 100%;
+        height: 60%;
+
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    }
+
+    &__image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__bottom {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: baseline;
+        height: 40%;
+
+        margin-top: 1rem;
+        padding: 1rem 2rem 0 2rem;
+    }
+
+    &__title {
+        font-size: 3.5rem;
+    }
+
+    &__description {
+        font-size: 1.5rem;
+    }
+
+    &__button,
+    &__button:link,
+    &__button:visited,
+    &__button:active {
+        padding: 1.25rem 2rem;
+        margin-top: 2rem;
+
+        background-color: #fff;
+        border-radius: 10px;
+        
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: .2px;
+        color: var(--color-primary);
+    }
+
+    &--1 {
+        background-color: var(--color-primary);
+    }
+
+    &--2 {
+        background-color: var(--color-secondary-dark);
+    }
+
+    &--3 {
+        background-color: var(--color-tertiary);
+    }
+}
