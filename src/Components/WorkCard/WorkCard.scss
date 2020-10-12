@@ -4,7 +4,7 @@
     justify-content: flex-start;
 
     height: 50rem; // TODO: Remove
-    width: 17.5%;
+    width: 100%;
 
     border-radius: 1rem;
     overflow: hidden;
@@ -22,7 +22,7 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
-        object-position: center;
+        object-position: 90% 50%;
     }
 
     &__bottom {

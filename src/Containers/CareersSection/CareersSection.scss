@@ -3,5 +3,11 @@
     flex-flow: row nowrap;
     justify-content: space-between;
 
-    margin: 4rem 0rem;
+    max-width: 128rem;
+    padding: 4rem;
+    margin: 0 auto;
+}
+
+.work-card__wrapper {
+    width: 30%;
 }
