@@ -1,10 +1,4 @@
 .splashscreen {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-end;
-    align-content: space-around;
-    column-count: 2;
-
     width: 100vw;
     // padding-bottom: 6rem;
     // height: 90rem; // TODO: For testing purposes, remove;
@@ -18,9 +12,21 @@
 
     color: #fff;
 
+    &__content {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+        align-content: space-between;
+        column-count: 2;
+
+        max-width: 128em;
+
+        margin: 0 auto; // center
+    }
+
     &__description {
         margin: 15rem 0 8rem 0;
-        max-width: 42%;
+        max-width: 48%;
 
         font-size: 6rem;
         color: var(--color-black);
