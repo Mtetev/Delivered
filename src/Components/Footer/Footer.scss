@@ -1,0 +1,46 @@
+.footer {
+    width: 100%;
+    padding: 2rem 0;
+
+    color: #fff;
+    background-color: var(--color-gray-dark);
+
+    &__content {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    
+        max-width: 128em;
+        margin: 0 auto; // center;
+    }
+
+    &__submenu {
+        width: 30%;
+        padding: 1rem 2rem;
+        background-color: var(--color-gray-dark-2);
+    }
+
+    &__submenu-title {
+        font-size: 3rem;
+        margin-bottom: 1.25rem;
+    }
+
+    &__list {
+        list-style: none;
+        font-size: 1.5rem;
+        font-weight: 200;
+    }
+
+    &__item {
+        width: 100%;
+
+        margin-bottom: .25rem;
+    }
+
+    &__item:hover > &__link,
+    &__item:hover > &__link:link,
+    &__item:hover > &__link:visited,
+    &__item:hover > &__link:active {
+        color: var(--color-primary);
+    }
+}
