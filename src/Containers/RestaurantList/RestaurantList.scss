@@ -1,10 +1,14 @@
 .restaurants {
     &-section {
+        width: 100vw;
+    }
+
+    &__content {
         max-width: 128rem;
         margin: 0 auto;
         padding: 4rem 0;
     }
-
+    
     &__header {
         font-size: 5rem;
         font-weight: 400;
