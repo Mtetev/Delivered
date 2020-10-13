@@ -6,12 +6,16 @@
     background-color: var(--color-gray-dark);
 
     &__content {
+        max-width: 128em;
+        margin: 0 auto; // center;
+    }
+
+    &__navigation {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-    
-        max-width: 128em;
-        margin: 0 auto; // center;
+
+        width: 100%;
     }
 
     &__submenu {
@@ -42,5 +46,37 @@
     &__item:hover > &__link:visited,
     &__item:hover > &__link:active {
         color: var(--color-primary);
+    }
+
+    &__social-media {
+        margin-top: 2rem;
+
+        &-link {
+            &:not(:last-child) {
+                margin-right: 1.5rem;
+            }
+        }
+
+        &-image {
+            font-size: 3rem;
+        }
+
+        &-link:hover &-image--facebook {
+            color: var(--color-facebook);
+        }
+
+        &-link:hover &-image--twitter {
+            color: var(--color-twitter);
+        }
+
+        &-link:hover &-image--instagram {
+            color: var(--color-instagram);
+        }
+    }
+
+    &__created-by {
+        margin-top: 3rem;
+        font-size: 1.5rem;
+        text-align: center;
     }
 }
