@@ -1,0 +1,33 @@
+.restaurant-banner {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__name {
+        width: 100%;
+
+        position: absolute;
+        top: 50%;                    // move the element's top left corner to 50% of the height of the parent
+        transform: translateY(-50%); // move the element up by 50% of it's own height thus centering it 
+        z-index: 100;
+
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #fff;
+    }
+}
