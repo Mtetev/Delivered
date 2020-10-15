@@ -5,13 +5,21 @@
     }
 
     &__content {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-
         max-width: 128rem;
         padding: 4rem 0;
         margin: 0 auto; // center
+    }
+
+    &__cards {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    &__header {
+        margin-bottom: 2rem;
+        font-size: 4rem;
+        font-weight: 500;
     }
 }
 
