@@ -5,7 +5,7 @@ const TopBar = () => {
     return (
         <div className="topbar">
             <div className="topbar-logo">
-                <img src="" alt="logo" className="topbar-logo__image"/>
+                <ion-icon name="cube-outline" class="topbar-logo__icon"></ion-icon>
                 <h2 className="topbar-logo__name">delivered</h2>
             </div>
             <div className="topbar-actions">
