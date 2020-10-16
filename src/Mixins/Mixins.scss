@@ -7,6 +7,8 @@ $breakpoints: (
     "largest": 80em     // 1280px
 );
 
+$mobile-padding: 0 2rem;
+
 @mixin respond($brekpoint) {
     @if map-has-key($breakpoints, $brekpoint) {
         @media screen and (max-width: map-get($breakpoints, $brekpoint)) {
@@ -15,5 +17,4 @@ $breakpoints: (
     } @else {
         @warn "Breakpoint: `#{$breakpoint}` does not exist.\nAvailable breakpoints are: `#{map-get($breakpoints)}`."
     }
-}
-
+};
