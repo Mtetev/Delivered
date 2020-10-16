@@ -1,5 +1,11 @@
-:root {
+// BREAK POINTS
+$bp-largest: 128em;
+$bp-large: 100em;
+$bp-medium: 80em;
+$bp-small: 64em;
 
+
+:root {
     /* COLORS */
     --color-primary: #1abc9c;
     --color-primary--transparent: #1abc9c33;
