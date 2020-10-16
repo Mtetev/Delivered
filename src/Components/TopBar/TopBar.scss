@@ -1,3 +1,5 @@
+@import "../../Mixins/Mixins.scss";
+
 .topbar {
     width: 100vw;
     height: var(--top-bar-height);
@@ -62,4 +64,22 @@
         }
     }
 
+    @include respond("largest") {
+        padding: 0 2rem;
+    }
+
+    @include respond("small") {
+        &__content {
+            flex-flow: row wrap;
+        }
+
+        &-logo {
+            margin-bottom: 1rem;
+        }
+
+        &-logo, &-actions {
+            width: 100%;
+            text-align: center;
+        }
+    }
 }

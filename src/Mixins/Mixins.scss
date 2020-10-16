@@ -1,0 +1,19 @@
+// BREAK POINTS
+$breakpoints: (
+    "smallest": 25em,   // 400px
+    "small": 37.5em,    // 600px
+    "medium": 50em,     // 800px
+    "large": 62.5em,    // 1000px
+    "largest": 80em     // 1280px
+);
+
+@mixin respond($brekpoint) {
+    @if map-has-key($breakpoints, $brekpoint) {
+        @media screen and (max-width: map-get($breakpoints, $brekpoint)) {
+            @content;
+        }
+    } @else {
+        @warn "Breakpoint: `#{$breakpoint}` does not exist.\nAvailable breakpoints are: `#{map-get($breakpoints)}`."
+    }
+}
+

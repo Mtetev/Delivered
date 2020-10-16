@@ -1,9 +1,4 @@
-// BREAK POINTS
-$bp-largest: 128em;
-$bp-large: 100em;
-$bp-medium: 80em;
-$bp-small: 64em;
-
+@import "../../Mixins/Mixins.scss";
 
 :root {
     /* COLORS */
@@ -42,6 +37,14 @@ $bp-small: 64em;
 
 html {
     font-size: 62.5%; // Default 1rem = 10px;
+
+    @include respond("small") {
+        font-size: 50%; // 1rem = 8px;
+    }
+
+    @include respond("smallest") {
+        font-size: 43.5%; // 1rem = 7px;
+    }
 }
 
 body {
