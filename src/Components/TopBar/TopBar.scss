@@ -65,7 +65,7 @@
     }
 
     @include respond("largest") {
-        padding: 0 2rem;
+        padding: var(--mobile-padding);
     }
 
     @include respond("small") {
