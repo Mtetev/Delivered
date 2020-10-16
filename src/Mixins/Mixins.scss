@@ -18,3 +18,9 @@ $mobile-padding: 0 2rem;
         @warn "Breakpoint: `#{$breakpoint}` does not exist.\nAvailable breakpoints are: `#{map-get($breakpoints)}`."
     }
 };
+
+@mixin mobile-padding($breakpoint) {
+    @include respond($breakpoint) {
+        padding: $mobile-padding;
+    }
+}

@@ -64,10 +64,8 @@
         }
     }
 
-    @include respond("largest") {
-        padding: var(--mobile-padding);
-    }
-
+    @include mobile-padding("largest");
+    
     @include respond("small") {
         &__content {
             flex-flow: row wrap;
