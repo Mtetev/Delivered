@@ -24,6 +24,10 @@
 
     /* SIZES */
     --top-bar-height: 6.5rem;
+
+    @include respond("small") {
+        --top-bar-height: 10rem;
+    }
 }
 
 /* Basic Reset */

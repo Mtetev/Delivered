@@ -1,3 +1,5 @@
+@import "../../Mixins/Mixins.scss";
+
 .footer {
     width: 100%;
     padding: 2rem 0;
@@ -78,5 +80,42 @@
         margin-top: 3rem;
         font-size: 1.5rem;
         text-align: center;
+    }
+
+    @include mobile-padding("largest");
+
+    @include respond("largest") {
+        padding-top: 2rem;
+    }
+
+    @include respond("small") {
+        &__navigation {
+            flex-flow: row wrap;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        &__submenu {
+            width: 80%;
+
+            &:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        &__social-media {
+            width: 100%;
+            text-align: center;
+            
+            &-link {
+                &:not(:last-child) {
+                    margin-right: 3rem; // make links easier to tap on mobile
+                }
+            }
+
+            &-image {
+                font-size: 4rem;
+            }
+        }
     }
 }
