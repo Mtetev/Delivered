@@ -1,3 +1,5 @@
+@import "../../Mixins/Mixins.scss";
+
 .restaurants {
     &-section {
         width: 100vw;
@@ -46,6 +48,22 @@
         &--small{
             width: 35%;
 
+        }
+    }
+
+    @include respond("largest") {
+        &-section {
+            @include mobile-padding("largest");
+        }
+
+        &__item {
+            outline-offset: 1.5rem;
+        }
+    }
+
+    @include respond("medium") {
+        &__item {
+            width: 100% !important;
         }
     }
 }
