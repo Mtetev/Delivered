@@ -18,8 +18,10 @@
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
+        align-content: center;
         
         max-width: 128rem;
+        height: 100%;
         margin: 0 auto; // center
     }
 
@@ -65,10 +67,11 @@
     }
 
     @include mobile-padding("largest");
-    
+
     @include respond("small") {
         &__content {
             flex-flow: row wrap;
+            align-content: space-evenly;
         }
 
         &-logo {
