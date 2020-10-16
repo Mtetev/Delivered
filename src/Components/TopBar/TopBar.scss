@@ -1,7 +1,6 @@
 .topbar {
     width: 100vw;
     height: var(--top-bar-height);
-    padding: 1rem 2rem;
 
     position: fixed;
     top: 0;
@@ -18,7 +17,7 @@
         justify-content: space-between;
         align-items: center;
         
-        width: 128rem;
+        max-width: 128rem;
         margin: 0 auto; // center
     }
 
@@ -44,6 +43,7 @@
     }
 
     &-actions {
+        // flex: 1;
 
         &__button,
         &__button:link,
