@@ -8,7 +8,7 @@ const CareersSection = () => {
             <div className="careers__content">
                 <h3 className="careers__header">Work with Delivered</h3>
                 <div className="careers__cards">
-                    <div className="work-card__wrapper">
+                    <div className="careers-work-card__wrapper">
                         <WorkCard 
                             id="1"
                             img={{
@@ -19,7 +19,7 @@ const CareersSection = () => {
                             description="Become a rider and enjoy the freedom to fit work around your life. Plus great fees, perks and discounts."
                         />
                     </div>    
-                    <div className="work-card__wrapper">
+                    <div className="careers-work-card__wrapper">
                         <WorkCard 
                             id="2"
                             img={{
@@ -30,7 +30,7 @@ const CareersSection = () => {
                             description="Partner with Deliveroo and reach more customers than ever. We handle delivery, so you can focus on the food."
                         />
                     </div>    
-                    <div className="work-card__wrapper">
+                    <div className="careers-work-card__wrapper">
                         <WorkCard 
                             id="3" 
                             img={{
