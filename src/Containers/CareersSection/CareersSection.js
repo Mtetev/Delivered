@@ -4,7 +4,7 @@ import WorkCard from "../../Components/WorkCard/WorkCard";
 
 const CareersSection = () => {
     return (
-        <section className="careers-section">
+        <section className="careers">
             <div className="careers__content">
                 <h3 className="careers__header">Work with Delivered</h3>
                 <div className="careers__cards">

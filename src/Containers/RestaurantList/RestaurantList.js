@@ -4,7 +4,7 @@ import "./RestaurantList.scss";
 
 const RestaurantList = () => {
     return (
-        <section className="restaurants-section">
+        <section className="restaurants">
             <div className="restaurants__content">
                 <h3 className="restaurants__header">What are you looking for today?</h3>
                 <ul className="restaurants__list">

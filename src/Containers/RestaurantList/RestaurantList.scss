@@ -1,9 +1,7 @@
 @import "../../Mixins/Mixins.scss";
 
 .restaurants {
-    &-section {
-        width: 100vw;
-    }
+    width: 100vw;
 
     &__content {
         max-width: 128rem;
@@ -51,11 +49,9 @@
         }
     }
 
-    @include respond("largest") {
-        &-section {
-            @include mobile-padding("largest");
-        }
+    @include mobile-padding("largest");
 
+    @include respond("largest") {
         &__item {
             outline-offset: 1.5rem;
         }

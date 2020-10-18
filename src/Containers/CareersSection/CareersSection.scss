@@ -1,9 +1,7 @@
 @import "../../Mixins/Mixins.scss";
 
 .careers {
-    &-section {
-        width: 100vw;
-    }
+    width: 100vw;
 
     &__content {
         max-width: 128rem;
@@ -30,11 +28,7 @@
         font-weight: 500;
     }
 
-    @include respond("largest") {
-        &-section {
-            @include mobile-padding("largest");
-        }
-    }
+    @include mobile-padding("largest");
 
     @include respond("large") {
         &__cards {
