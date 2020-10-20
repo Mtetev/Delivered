@@ -2,6 +2,10 @@ import React from "react";
 import "./CareersSection.scss";
 import WorkCard from "../../Components/WorkCard/WorkCard";
 
+import Card1 from "../../../img/careers1.jpg";
+import Card2 from "../../../img/careers2.jpg";
+import Card3 from "../../../img/careers3.jpg";
+
 const CareersSection = () => {
     return (
         <section className="careers">
@@ -12,7 +16,7 @@ const CareersSection = () => {
                         <WorkCard 
                             id="1"
                             img={{
-                                url: "../../../img/careers1.jpg",
+                                url: Card1,
                                 description: "Riders"
                             }}
                             title="Riders"
@@ -23,7 +27,7 @@ const CareersSection = () => {
                         <WorkCard 
                             id="2"
                             img={{
-                                url: "../../../img/careers2.jpg",
+                                url: Card2,
                                 description: "Food"
                             }}
                             title="Restaurants"
@@ -34,7 +38,7 @@ const CareersSection = () => {
                         <WorkCard 
                             id="3" 
                             img={{
-                                url: "../../../img/careers3.jpg", 
+                                url: Card3, 
                                 description: "Office workers"
                             }}
                             title="Careers"
