@@ -1,5 +1,5 @@
 # Delivered
-> Delivered is a example food ordering app built with React and Sass 
+> Delivered is an example food ordering app built with React and Sass. Demo: https://delivered-9bfcf.web.app/
 
 ## Table of contents
 * [Screenshots](#screenshots)
@@ -33,4 +33,4 @@ Project is: in progress
 Project inspired by Deliveroo
 
 ## Contact
-Created by Miroslav Tetevenski. Feel free to contact me @ miroslav.tetevenski@gmail.com
+Created by Miroslav Tetevenski. Feel free to contact me at miroslav.tetevenski@gmail.com
